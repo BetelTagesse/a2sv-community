@@ -24,9 +24,9 @@ def countSwaps(a):
                 a[j+1] = a[j]
                 count +=1
                 
-    print("The array is sorted in "+str(count)+" swaps.")
-    print("The first element: " + str(a[0]) )
-    print("The last element: " + str(a[-1]))
+    print("Array is sorted in "+str(count)+" swaps.")
+    print("First Element: " + str(a[0]) )
+    print("Last Element: " + str(a[-1]))
     
                 
 if __name__ == '__main__':
