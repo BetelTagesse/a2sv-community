@@ -1,13 +1,17 @@
-class Solution:
-    def fizzBuzz(self, n , int):
-        list = []
-        for i in range(1,n+1):
-            if (i % 3 == 0) and (i % 5 ==0):
-                list.append('FizzBuzz')
-            elif i % 3 == 0:
-                list.append('Fizz')
+class Solution(object):
+    def fizzBuzz(self, n):
+        """
+        :type n: int
+        :rtype: List[str]
+        """
+        new = []
+        for i in range(1, n+1):
+            if i % 3 == 0 and i % 5 == 0:
+                new.append("FizzBuzz")
             elif i % 5 == 0:
-                list.append('Buzz')
+                new.append("Buzz")
+            elif i % 3 == 0:
+                new.append("Fizz")
             else:
-                list.append(str(i))
-        return list
+                new.append(str(i))
+        return new
